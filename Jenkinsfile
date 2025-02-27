@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Viktoriia-code/Aikido-Practice-Tracker.git'
+                git branch: 'main', url: 'https://github.com/Viktoriia-code/Aikido-Practice-Tracker.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
