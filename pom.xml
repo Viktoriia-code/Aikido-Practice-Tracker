@@ -30,7 +30,7 @@
     </dependencies>
 
     <build>
-        <finalName>timecal</finalName>
+        <finalName>tracker</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
